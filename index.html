@@ -8,6 +8,25 @@
     <title>Mi Curriculum</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CssDelCV.css">
+     <script>
+        function cambiarColor(){
+            // Si el fondo actual es blanco (o está vacío), cambiamos a modo oscuro
+            if (document.body.style.backgroundColor === 'white' || document.body.style.backgroundColor === '') {
+                
+                document.body.style.backgroundColor = '#222222'; // Fondo oscuro
+                document.body.style.color = 'white';             // Texto blanco
+                document.getElementById('boton-estilo').textContent = 'Cambiar a Modo Claro';      // Cambiamos el texto del botón
+                
+            } else {
+                
+                // Si no, volvemos al modo claro
+                document.body.style.backgroundColor = 'white';
+                document.body.style.color = 'black';
+                document.getElementById('boton-estilo').textContent = 'Cambiar a Modo Oscuro';
+                
+            }
+        }
+    </script>
 </head>
 <body>    
     <div class="container">
@@ -59,6 +78,12 @@
            <ul>
             <li>www.linkedin.com/in/rafa-martínez-67b007385/</li>
           </ul>
+             <div class="contenedor">
+        <h1>Ejemplo de JavaScript</h1>
+        <p>Al pulsar el botón, cambiaremos el color de fondo y del texto usando JS.</p>
+        
+        <button id="boton-estilo" onclick="cambiarColor()">Púlsame</button>  
+    </div>
           
         </div>
       </div>
