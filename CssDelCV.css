@@ -17,7 +17,9 @@ body {
 }
 .header {
 	text-align: center;
-	align: center; 
+}
+.boton {
+	padding: 50px;
 }
 .header h1 {
 	margin-bottom: 10px;
